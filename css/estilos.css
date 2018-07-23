@@ -1,0 +1,482 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src:url(../fonts/DancingScript-Regular.ttf);
+}
+
+
+body{
+font-family: 'Dancing Script', cursive;
+margin: 0;
+background: black;
+/*ANIMACION*/
+animation-name: rebote;
+animation-duration: 1s;
+-webkit-animation-delay:0.1s;
+-moz-animation-delay: 0.1s;
+-o-animation-delay:0.1s;
+animation-delay: 0.1s;
+}
+
+@keyframes rebote {
+  0%{
+  position: relative;
+  margin-top: 150%;
+  }
+  60%{
+  position: relative;
+  margin-top: -5%;
+  }
+  100%{
+  position: relative;
+  margin-top: 0%;
+  }
+}
+
+@media  (min-width: 900px) {
+
+  #contenido
+	{
+		width: 900px;
+    margin: 0.3% auto;
+
+	}
+
+  header{
+    margin: 0 auto;
+		background-color:  #5b7989;
+		height: 10vh;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+    -webkit-border-radius: 10px  10px 0   0;
+    -moz-border-radius: 10px 10px 0   0;
+	}
+
+
+  #izq{
+    height: 100%;
+    width: 60%;
+    }
+
+    #izq p
+    {
+    color:white;
+    text-shadow: 2px 2px 2px  #02010a;
+    font-size: 5vh;
+    padding-left: 2vh;
+    margin-top: 3vh;
+    }
+
+    #der{
+      width: 40%;
+      }
+
+      #menu{
+      position: relative;
+      float: right;
+      padding-right: 2vh;
+      padding-top: 6vh;
+      }
+
+
+      #menu a {
+      color: white;
+      text-decoration: underline;
+      padding-right: 2vh;
+
+      }
+
+      #menu  a:hover{
+      text-decoration:none !important;
+      text-shadow: 2px 2px 2px  #02010a;
+      }
+
+      #inicio{
+        text-decoration:none !important;
+      }
+
+      #columna1
+      {
+      margin-top: 0;
+      background-color: #82c3a6;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      }
+
+      #columna1 >img{
+        margin: 1% auto;
+        width: 85%;
+        box-shadow:  2px 2px  #02010a;
+      }
+
+
+      #secundario{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+      }
+
+      #columna2
+      {
+      background-color: #d5c75f ;
+      width:100%;
+      display:    flex;
+      flex-direction: row;
+      /*padding: 2vh;*/
+      }
+
+  #columna2 >div{
+      padding: 2vh;
+      text-align: center;
+      width: 50%;
+    }
+
+      #columna2  >div >a> img{
+      width: 100%;
+      border: 1px solid black;
+      transition-duration: 0.5s;
+      }
+
+      #campo1 > a>img:hover{
+      border: solid 2px black;
+      transform: rotateZ(10deg);
+      box-shadow:  2px 2px  #82c3a6;
+      }
+
+      @keyframes paisaje_animacion {
+        0%{
+        position: relative;
+        bottom:  0px;
+        left: 0px;
+        }
+
+        50%{
+        position: relative;
+        bottom:  5px;
+        left: 10px;
+        }
+
+        100%{
+        position: relative;
+        bottom:  0px;
+        left: 0px;
+        }
+      }
+
+      #campo2 > a > img:hover{
+        box-shadow:  4px 4px  #82c3a6;
+        border: solid 2px black;
+        animation-name: paisaje_animacion;
+      	animation-duration: 1.5s;
+      	-webkit-animation-delay:0.8s;
+      	-moz-animation-delay: 0.8s;
+      	-o-animation-delay:0.8s;
+      	animation-delay: 0.1s;
+      }
+
+
+      #columna2 a {
+      color: black;
+      text-decoration: underline;
+      font-size: 1.5em;}
+
+      #columna2 a:hover{
+      text-decoration:none !important;
+      text-shadow: 2px 2px 2px  #02010a;
+      }
+
+      article > div a> img{
+      box-shadow:  2px 2px  #02010a;
+      }
+
+      footer{
+        margin-top: 0;
+        padding: 2vh;
+        background: #C6d5c5;
+        -webkit-border-radius:0 0 10px  10px;
+        -moz-border-radius: 0 0 10px  10px;
+        height: auto;
+        display:    flex;
+        flex-direction: row;
+      }
+
+
+
+      footer >div{
+      background: rgba(91, 121, 137, 0.1) ;
+      --border: 2px solid black;
+      width: 20%;
+      margin: auto;
+      padding: 2vh;
+      margin-top:2vh;
+      margin-bottom: 2vh;
+      -webkit-border-radius:1vh ;
+      -moz-border-radius: 1vh ;
+      }
+
+      footer >div:hover {
+        background:rgba(91, 121, 137, 0.3) ;
+      }
+
+      footer >div > h1{
+        margin-top: 0;
+        font-size: 4vh;
+        text-align: center;
+        opacity: 1;
+      }
+
+      footer >div > a{
+        text-decoration: none ;
+        color: black;
+        line-height: 2em;
+
+      }
+
+      .Redes{
+        width: 2em;
+        transition-property: width;
+        transition-duration: 0.5s;
+      }
+
+     footer >div > a> img:hover{
+     width: 2.5em;
+     }
+     #Derechos{
+       text-align: center;
+     }
+    #Derechos img{
+      width: 3em;
+      transition-property: width;
+      transition-duration: 0.5s;
+    }
+
+    #Derechos img:hover{
+      width: 3.5em;
+    }
+}
+
+
+
+/*VERSION MOVIL*/
+@media  (max-width: 899px) {
+
+  #contenido
+      {
+        width: 100%;
+        margin: 0.5vh 0;
+      }
+
+
+      header
+      {
+      -webkit-border-radius: 10px 10px 0   0;  /* Safari  */
+      -moz-border-radius: 10px 10px 0   0;     /* Firefox */
+      width:100%;
+      background-color:  #5b7989;
+      color: white;
+      }
+
+      #izq{
+        width: 100%;
+        padding-bottom: 0;
+      }
+
+      #izq p
+      {
+      color:white;
+      text-shadow: 2px 2px 2px  #02010a;
+      font-size: 2.3em;
+      margin-top: 1vh;
+      text-align: center;
+      padding-bottom: 0;
+      }
+
+      #der{
+        margin-top: -2.2em;
+        width: 100%;
+       height: 2em;
+
+      }
+
+      #menu{
+      text-align: center;
+      padding-top: 0;
+      margin-top: 0;
+      }
+
+      #menu a{
+      color: white;
+      text-decoration: underline;
+      padding-right: 2vh;
+      font-size: 1.3em;
+      }
+      #menu a:hover{
+      text-decoration:none !important;
+       text-shadow: 2px 2px 2px  #02010a;
+      }
+
+      #inicio{
+          text-decoration:none !important;
+      }
+      #columna1
+      {
+      margin-top: 0;
+      background-color: #82c3a6;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      padding: 2vh 0;
+      }
+
+      #columna1 >img{
+        margin: 2% auto;
+        width: 90%;
+        box-shadow:  2px 2px  #02010a;
+      }
+
+      #columna2
+      {
+      width: 100%;
+      background-color: #d5c75f ;
+      margin-top: 0;
+      display: flex;
+      flex-flow: column;
+      padding: 2vh 0;
+
+      }
+
+
+      #columna2 >div{
+          /*  padding: 2vh;*/
+            margin: 1vh auto;
+            width: 90%;
+            text-align: center;
+            --margin-bottom: 2vh;
+
+            }
+
+
+        #columna2 >div  a>img{
+                  width: 100%;
+                  border: 1px solid black;
+                  transition-duration: 0.5s;
+        }
+
+        #campo1  a>img:hover{
+        border: solid 2px black;
+        transform: rotateZ(10deg);
+        box-shadow:  4px 4px  #82c3a6;
+        }
+
+        @keyframes paisaje_animacion {
+          0%{
+          position: relative;
+          bottom:  0px;
+          left: 0px;
+          }
+
+          50%{
+          position: relative;
+          bottom:  5px;
+          left: 10px;
+          }
+
+          100%{
+          position: relative;
+          bottom:  0px;
+          left: 0px;
+          }
+        }
+
+        #campo2  a>img:hover{
+          box-shadow:  4px 4px  #82c3a6;
+          border: solid 2px black;
+          animation-name: paisaje_animacion;
+        	animation-duration: 1.5s;
+        	-webkit-animation-delay:0.8s;
+        	-moz-animation-delay: 0.8s;
+        	-o-animation-delay:0.8s;
+        	animation-delay: 0.1s;
+        }
+
+        #columna2 a {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.2em;
+        --font-weight: bold;
+      }
+
+        #columna2 a:hover{
+        text-decoration:none !important;
+        text-shadow: 2px 2px 2px  #02010a;
+        }
+
+        article > div a> img{
+        box-shadow:  2px 2px  #02010a;
+        }
+
+      footer{
+        margin-top: 0;
+        padding-top: 1vh ;
+        padding-bottom: 1vh;
+        background: #C6d5c5;
+        -webkit-border-radius:0 0 10px  10px;
+        -moz-border-radius: 0 0 10px  10px;
+        height: auto;
+        align-content: center;
+      }
+
+
+    footer >div {
+     background: rgba(91, 121, 137, 0.1) ;
+     margin: 1em;
+     padding: 2vh;
+     margin-top:2vh;
+     margin-bottom: 2vh;
+     -webkit-border-radius:1vh ;
+     -moz-border-radius: 1vh ;
+     }
+
+     footer >div:hover {
+       background:rgba(91, 121, 137, 0.3) ;
+     }
+
+     footer >div > h1{
+       margin-top: 0;
+       font-size: 1.5em;
+       text-align: center;
+     }
+
+      footer >div > a{
+
+      margin-top: 1em;
+      text-decoration: none ;
+      color: black;
+      line-height: 2em;
+      }
+
+
+     .Redes{
+       width: 2em;
+       transition-property: width;
+     	 transition-duration: 0.5s;
+     }
+
+      footer >div > a> img:hover{
+      	width: 2.5em;
+      }
+      #Derechos{
+        text-align: center;
+      }
+     #Derechos img{
+       width: 3em;
+       transition-property: width;
+     	 transition-duration: 0.5s;
+     }
+     #Derechos img:hover{
+       width: 3.5em;
+     }
+
+}
